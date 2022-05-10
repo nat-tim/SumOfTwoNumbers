@@ -6,6 +6,7 @@ import io.cucumber.java.ru.Тогда;
 
 import java.util.List;
 
+import static StepDefinition.Сalculator.summ;
 import static java.lang.Integer.parseInt;
 
 public class StepsDefinition {
@@ -19,7 +20,7 @@ public class StepsDefinition {
     }
     @Тогда("^складываем их$")
     public void sumOfNum(){
-        sum = a + b;
+        sum = summ(a , b);
     }
     @И("^выводим результат$")
     public void printResult(){
