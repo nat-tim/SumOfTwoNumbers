@@ -6,7 +6,7 @@ import io.cucumber.java.ru.Тогда;
 
 import java.util.List;
 
-import static StepDefinition.Сalculator.*;
+
 import static java.lang.Integer.parseInt;
 
 public class StepsDefinition {
