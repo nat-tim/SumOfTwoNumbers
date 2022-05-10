@@ -6,12 +6,14 @@ import io.cucumber.java.ru.Тогда;
 
 import java.util.List;
 
+import static StepDefinition.Сalculator.*;
 import static java.lang.Integer.parseInt;
 
 public class StepsDefinition {
     int a;
+
     int b;
-    int sum;
+    int sum=0;
     @Когда("^получаем два целых числа$")
     public void initNumbers( List<String> arg){
         a = parseInt(arg.get(0));
